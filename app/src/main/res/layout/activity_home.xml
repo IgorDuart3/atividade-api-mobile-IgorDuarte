@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenBg"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <!-- Nome do app -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NutrInfo"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:textColor="@color/brandPrimary" />
+
+    <!-- Descrição curta: dá propósito à tela em vez de só um botão -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulte informações nutricionais de produtos a partir do código de barras."
+        android:textSize="16sp"
+        android:textColor="@color/textSecondary"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="44dp" />
+
+    <!-- Botão que leva à tela de consulta -->
+    <Button
+        android:id="@+id/botaoPesquisar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar informações nutricionais do alimento"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="@color/brandPrimary"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp" />
+
+</LinearLayout>

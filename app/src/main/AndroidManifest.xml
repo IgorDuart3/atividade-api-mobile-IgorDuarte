@@ -14,16 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trabalho_N2">
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="Informação Nutricional"
-            android:theme="@style/Theme.Trabalho_N2">
+            android:name=".HomeActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
