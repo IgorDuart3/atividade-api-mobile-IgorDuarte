@@ -1,68 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Consulta de Produtos"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:paddingBottom="4dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Digite o código de barras presente na embalagem do alimento para ver suas informações nutricionais."
-            android:textSize="14sp"
-            android:paddingBottom="24dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Código de barras"
-            android:textStyle="bold"
-            android:paddingBottom="4dp" />
-
-        <EditText
-            android:id="@+id/inputCodigo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ex.: 3017624010701"
-            android:inputType="number"
-            android:maxLines="1" />
-
-        <Button
-            android:id="@+id/botaoConsultar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Consultar"
-            android:layout_marginTop="16dp" />
-
-        <ProgressBar
-            android:id="@+id/progresso"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:visibility="gone" />
-
-        <TextView
-            android:id="@+id/areaResultado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:textSize="16sp"
-            android:lineSpacingExtra="2dp"
-            android:textIsSelectable="true" />
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/screenBg" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <!--  Título  -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Consulta de Produtos" android:textSize="26sp" android:textStyle="bold" android:textColor="@color/brandPrimary" android:paddingBottom="4dp"/>
+        <!--  Orientação  -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Digite o código de barras de um produto para ver suas informações nutricionais." android:textSize="14sp" android:textColor="@color/textSecondary" android:paddingBottom="28dp"/>
+        <!--  Label do campo  -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Código de barras" android:textStyle="bold" android:textColor="@color/textPrimary" android:paddingBottom="6dp"/>
+        <!--  Campo de entrada  -->
+        <EditText android:id="@+id/inputCodigo" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ex.: 3017624010701" android:inputType="number" android:maxLines="1" android:background="@drawable/bg_input" android:padding="14dp" android:textColor="@color/textPrimary" android:textColorHint="@color/textSecondary"/>
+        <!--  Botão  -->
+        <Button android:id="@+id/botaoConsultar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Consultar" android:textColor="#FFFFFF" android:textAllCaps="false" android:textSize="16sp" android:backgroundTint="@color/brandPrimary" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_marginTop="20dp"/>
+        <!--  Indicador de carregamento  -->
+        <ProgressBar android:id="@+id/progresso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="20dp" android:visibility="gone"/>
+        <!--  Card de resultado  -->
+        <TextView android:id="@+id/areaResultado" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:background="@drawable/bg_resultado" android:padding="18dp" android:text="O resultado da consulta aparecerá aqui." android:textSize="16sp" android:textColor="@color/textPrimary" android:lineSpacingExtra="3dp" android:textIsSelectable="true"/>
     </LinearLayout>
 </ScrollView>
